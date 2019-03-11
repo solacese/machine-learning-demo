@@ -1,7 +1,7 @@
 # machine-learning-demo
 Demo of a web application using [PubSub+ JavaScript API](https://dev.solace.com/tech/javascript-api/) connecting to public cloud based Machine Learning Functions-as-a-Service (FaaS) over REST
 
-Machine Learning Functions of 'Image Analysis' and 'Sentiment Analysis' are used from the following providers:
+Machine Learning Functions of 'Sentiment Analysis' and 'Image Analysis' are used from the following providers:
 
 - AWS: [Comprehend](https://aws.amazon.com/comprehend/) and [Rekognition](https://aws.amazon.com/rekognition/) (via a private REST endpoint created using [API Gateway](https://aws.amazon.com/api-gateway/) and [Lambda](https://aws.amazon.com/lambda/))
 - Azure: [Text Analytics](https://azure.microsoft.com/en-us/services/cognitive-services/text-analytics/) and [Computer Vision](https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/) (via public REST endpoints)
