@@ -1,0 +1,413 @@
+
+
+html,body{ 
+	margin:		0; 
+	padding:	0; 
+    font-family:      HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Setup the h element sizes since all browser inherited CSS has been reset... */
+h1 {
+	display: block;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+h2 {
+	display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+h3 {
+	display: block;
+    font-size: 1.17em;
+	line-height: 1.5;
+    font-weight: bold;
+	color: grey;
+}
+
+h4 {
+	display: block;
+    font-size: 1em;
+    font-weight: bold;
+	color:	grey;
+
+}
+
+h5 {
+	display: block;
+    font-size: 0.83em;
+    font-weight: bold;
+}
+
+h5 {
+	display: block;
+    font-size: 0.67em;
+    font-weight: bold;
+}
+
+
+p {
+	color:			  grey;
+	margin-bottom:	10px;
+}
+
+label {
+    margin-right:     0px;
+}
+
+textarea {
+  resize: none;
+  overflow:hidden;
+  border:solid 2px #8c9199;
+  text-align:center;
+  background-color:white;
+  color:#7f7f7f;  
+  position: relative;
+  z-index: 200;
+
+}
+
+a {
+	color: grey;
+	text-decoration: none;
+}
+
+/* for debugging/design */
+//div {
+//  border:solid 1px #8c9199;
+//}
+
+/* control the max width of the doc contents */
+.doc-header {
+    padding:	0px;
+    width:		95%;
+	max-width:	1200px;
+	min-width:	365px;
+    margin:		auto;
+    color:		#3d3d3d;
+	position:	relative;
+	line-height: 150%;
+}
+
+/* doc-body min-width was 550px */
+
+.doc-body {
+    padding:	0px;
+	padding: 10px;
+	max-width:	1200px;
+	min-width:	365px;
+    color:		#3d3d3d;
+	position:	relative;
+	background-color: #f2f2f2;
+	border:		4px solid #00c895;
+}
+
+.doc-footer {
+	padding: 10px;
+	max-width:	1200px;
+	min-width:	365px;
+    color:		#3d3d3d;
+	position:	relative;
+	border:		4px solid grey;
+	line-height: 1.5;
+}
+.doc-width {
+	padding:	0px;
+    width:		95%;
+	max-width:	1400px;
+	margin: 0 auto;
+}
+
+
+
+.banner {
+    color:            white;
+    background-color: #474747;
+    padding:          1px;
+	min-width:		  365px;
+	width:		 	  100%;
+
+}
+
+.banner-interior {
+}
+
+.banner-heading {
+    font-weight:      bold;
+    font-size:        90%;
+    margin:           5px 10px -10px 15px;
+    display:          inline-block;
+    vertical-align:   top;
+}
+
+.banner-footer {
+    font-weight:      bold;
+    font-size:        100%;
+    display:          inline-block;
+	position:			absolute;
+    vertical-align:   top;
+	overflow:		  hidden;
+	height:			  20px;
+	width:			  100%;
+	background-color: #474747;
+	border:			  none;
+	padding: 0;
+	margin:	0;
+}
+
+
+.banner-logo img {
+    width:            103px;
+    height:           30px;
+    margin-left:      10px;
+	margin-top:		  20px;
+}
+
+/* warning shown if there are connectivity issues */
+.warning {
+            padding: 5px; 
+            border: 1px solid black; 
+            background-color: #ff8;
+}
+
+.button-error {
+    color:            white;
+    background:       rgb(221, 66, 66);
+}
+
+
+/* Image size determined by the surrounding div */
+img {
+    max-width: 100%;
+    max-height: 100%;
+	vertical-align: top;	// removes space underneath the image in a div
+}
+
+
+/* divs for row and column behaviour */
+.column {
+    float: left;
+    padding: 0px;
+	position: relative;
+}
+
+.left {
+	width: 25%;
+	height:	100%;
+	padding: 0px;
+	margin: 0px;
+	position: relative;
+}
+
+.right {
+  width: 74%;
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+}
+
+.left-pane {
+	width: 65%;
+	padding: 0px;
+	margin: 0px;
+	position: relative;
+
+}
+
+.right-pane {
+	padding: 0px;
+	line-height: 150%;
+	position: relative;
+	float: right;
+	width: 33%;
+}
+
+.links-box {
+	position: relative;
+    border:4px solid grey;
+	padding:	5px;
+	height: 30%;
+}
+
+.news-box {
+    padding:	10px;
+	height:	290px;
+	max-width:	1200px;
+	min-width:	365px;
+    color:		#3d3d3d;
+	position:	relative;
+	background-color: #f2f2f2;
+	border:		4px solid #00c895;
+	overflow: auto;
+}
+
+.news-drop-down {
+	border:solid 2px red;
+}
+
+.news-row {
+	position: relative;
+	border-style: solid ;
+	border-color: grey;
+	width: 100%;
+	min-height: 54px;
+	padding: 2px;
+	margin: 2px;
+	padding-bottom: 0px;
+}
+
+
+.news-image {
+	border:1px solid grey;
+	width: 80px;
+	padding: 0px;
+	margin-left: 2px;
+	margin-top: 3px;
+	padding-bottom: 0px;
+	float: left;
+	vertical-align: bottom;
+}
+
+.news-text {
+	margin-left: 87px;
+	margin-top: 2px;
+	padding: 0px;
+}
+
+.submitted-row {
+	position: relative;
+	border: 2px solid grey;
+	width: 95%;
+	min-height: 85px;
+	padding: 2px;
+	margin: 2px;
+	padding-bottom: 0px;
+}
+
+.submitted-image {
+	border:1px solid grey;
+	width: 130px;
+	padding: 0px;
+	margin-left: 2px;
+	margin-top: 3px;
+	padding-bottom: 0px;
+	float: left;
+	vertical-align: bottom;
+}
+
+.submitted-text {
+	margin-left: 145px;
+	margin-top: 2px;
+	margin-right: 5px;
+	padding: 0px;
+}
+
+.right-pane p {
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row {
+  margin:	0px;
+  padding:	0px;
+  line-height: 1.2em;
+}
+
+.mrow {
+  height: 100%;
+  overflow: hidden;
+  margin:	0px;
+  padding:	0px;
+}
+
+
+.right-pane-spacer {
+	line-height: 1.9;
+}
+
+@media (max-width: 800px) {
+  .left-pane { width: 100%; }
+  .right-pane { float: left; width: 100%; margin-top: 10px;}
+  .left { width: 33% }
+  .right { width: 62% }
+  .right-pane-spacer { display: none; }
+}
+
+/* Behaviour and style of various div classes */
+
+
+.services-column { 
+   height:100%;
+   width:30%;
+   float:left;
+   text-align:center;
+   position: relative;
+}
+
+.services-column a {
+    text-decoration: none;
+	color: grey;
+}
+
+
+.sentiment-column { 
+   height:100%;
+   width:30%;
+   float:left;
+   text-align:center;
+   position: relative;
+}
+
+.image-column { 
+   height:100%;
+   width:38%;
+   float:left;
+   text-align:center;
+   position: relative;
+   margin:	0px;
+   padding:	0px;
+}
+
+.image-analysis {
+	position: relative;
+	border: 2px solid grey;
+	width: 95%;
+	height: 100px;
+	margin-top: 10px;
+	margin-right: 0px;
+	padding: 3px;
+	text-align: left;
+	color: grey;
+	background-color: white;
+	overflow: auto;	
+	font-size: small;
+}
+
+
+.sentiment-image-div {
+   text-align:center;
+   width: 70%;
+   max-width: 100px;
+   margin:0 auto;
+}
+
+.logo-image-div {
+   text-align:center;
+   height: 40px;
+   width: 80%;
+   margin:0 auto;
+}
+
+
+
+
+
+/********************************************************/
