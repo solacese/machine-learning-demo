@@ -3,9 +3,9 @@ Demo of a web application using PubSub+ JavaScript API connecting to public clou
 
 Machine Learning Functions of 'Image Analysis' and 'Sentiment Analysis' are used from the following providers:
 
-- AWS: [Comprehend](https://aws.amazon.com/comprehend/) and [Rekognition](https://aws.amazon.com/rekognition/) (via [API Gateway](https://aws.amazon.com/api-gateway/) and [Lambda](https://aws.amazon.com/lambda/))
-- Azure: [Text Analytics](https://azure.microsoft.com/en-us/services/cognitive-services/text-analytics/) and [Computer Vision](https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/)
-- Google: [Natural Language](https://cloud.google.com/natural-language/) and [Vision](https://cloud.google.com/vision/)
+- AWS: [Comprehend](https://aws.amazon.com/comprehend/) and [Rekognition](https://aws.amazon.com/rekognition/) (via a private REST endpoint created using [API Gateway](https://aws.amazon.com/api-gateway/) and [Lambda](https://aws.amazon.com/lambda/))
+- Azure: [Text Analytics](https://azure.microsoft.com/en-us/services/cognitive-services/text-analytics/) and [Computer Vision](https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/) (via public REST endpoints)
+- Google: [Natural Language](https://cloud.google.com/natural-language/) and [Vision](https://cloud.google.com/vision/) (via public REST endpoints)
 
   
 Solace features used:
