@@ -1,5 +1,5 @@
 # machine-learning-demo
-Demo of a web application using [PubSub+ JavaScript API](https://dev.solace.com/tech/javascript-api/) connecting to public cloud based Machine Learning Functions-as-a-Service (FaaS)
+Demo of a web application using [PubSub+ JavaScript API](https://dev.solace.com/tech/javascript-api/) connecting to public cloud based Machine Learning Functions-as-a-Service (FaaS) over REST
 
 Machine Learning Functions of 'Image Analysis' and 'Sentiment Analysis' are used from the following providers:
 
