@@ -16,5 +16,5 @@ The data source for images and text for analysis is real-time [BBC News](https:/
 View the demo in action here:
 http://london.solace.com/cloud-analytics/machine-learning.html
 
-[Click for an example result](example-result-1.png)
+[Click for an example result](website-files/example-result-1.png)
 
