@@ -6,7 +6,7 @@ A demo of a web application using [PubSub+ JavaScript Messaging API](https://dev
 
 The Machine Learning (ML) Functions of 'Sentiment Analysis' and 'Image Analysis' are used from AWS, Azure and Google.
 
-**Cloud Services Used:**
+**Cloud Services Used**
 - AWS: [Comprehend](https://aws.amazon.com/comprehend/) and [Rekognition](https://aws.amazon.com/rekognition/) (via a private REST endpoint created using [API Gateway](https://aws.amazon.com/api-gateway/) and [Lambda](https://aws.amazon.com/lambda/))
 - Azure: [Text Analytics](https://azure.microsoft.com/en-us/services/cognitive-services/text-analytics/) and [Computer Vision](https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/) (via public REST endpoints)
 - Google: [Natural Language](https://cloud.google.com/natural-language/) and [Vision](https://cloud.google.com/vision/) (via public REST endpoints)
@@ -16,12 +16,12 @@ The Machine Learning (ML) Functions of 'Sentiment Analysis' and 'Image Analysis'
 The data source for images and text for ML analysis is real-time [BBC News](https://bbc.co.uk/news) as provided via their [RSS feeds](https://www.bbc.co.uk/news/10628494#userss). (Also accessed via the PubSub+ broker as a REST GET operation.)
 
   
-**Solace PubSub+ features used:**
+**Solace PubSub+ features used**
 - [REST Microgateway](https://docs.solace.com/Features/Microgateway-Concepts/Microgateway-Use-Cases.htm)
 - [Request/Reply Messaging](https://docs.solace.com/Messaging-Basics/Core-Concepts-Message-Models.htm#Request-)
 - [WebSockets Messaging](https://docs.solace.com/Solace-PubSub-Messaging-APIs/JavaScript-API/Web-Messaging-Concepts/Web-Messaging-Architectures.htm)
 
-**View the live demo in action here:
+**Try the live demo in action here:
 http://london.solace.com/cloud-analytics/machine-learning.html**
 
 **Other Useful Links**
