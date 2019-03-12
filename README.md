@@ -2,7 +2,7 @@
 
 ## What does this demonstrate?
 
-A demo of a web application using [PubSub+ JavaScript Messaging API](https://dev.solace.com/tech/javascript-api/) connecting to public cloud based Machine Learning Functions-as-a-Service (FaaS) over REST.
+A demo of a web application using [PubSub+ JavaScript Messaging API](https://dev.solace.com/tech/javascript-api/) connecting to public cloud based Machine Learning Functions-as-a-Service (FaaS) over REST, and then comparing the results from each.
 
 The Machine Learning (ML) Functions of 'Sentiment Analysis' and 'Image Analysis' are used from AWS, Azure and Google.
 
