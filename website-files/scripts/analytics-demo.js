@@ -858,6 +858,21 @@ function isResponseFailed(response)
 	catch (error)
 	{
 	}
+
+	// The Google Vision Service
+	try 
+	{
+		if (("responses" in response) && ("error" in response.responses[0]))
+		{
+			message = response.responses[0].error.message;
+			failed = true;		
+			return {"failed" :	failed, "message" : message};
+		}
+
+	}
+	catch (error)
+	{
+	}
 	
 	// Nov 2018 - Google has started sending back an emptry response array!! grrr. 
 	try 
