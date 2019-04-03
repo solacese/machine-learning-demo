@@ -5,7 +5,6 @@ We'd love for you to contribute and welcome your help. Here are some guidelines 
 - [Issues and Bugs](#issue)
 - [Submitting a fix](#submitting)
 - [Feature Requests](#features)
-- [Add a feature](#addFeature)
 - [Questions](#questions)
 
 ## <a name="issue"></a> Did you find a issue?
@@ -20,7 +19,7 @@ Open a new GitHub pull request with the patch following the steps outlined below
 
 Before you submit your pull request consider the following guidelines:
 
-* Search [GitHub](https://github.com/SolaceSamples/solace-samples-template/pulls) for an open or closed Pull Request
+* Search [GitHub](https://github.com/solacese/machine-learning-demo/pulls) for an open or closed Pull Request
   that relates to your submission. You don't want to duplicate effort.
 
 ### Submitting a Pull Request
@@ -29,11 +28,11 @@ Please follow these steps for all pull requests. These steps are derived from th
 
 #### Step 1: Fork
 
-Fork the project [on GitHub](https://github.com/SolaceSamples/solace-samples-template) and clone your fork
+Fork the project [on GitHub](https://github.com/solacese/machine-learning-demo) and clone your fork
 locally.
 
 ```sh
-git clone https://github.com/<my-github-repo>/solace-samples-template
+git clone https://github.com/<my-github-repo>/machine-learning-demo
 ```
 
 #### Step 2: Branch
@@ -67,7 +66,7 @@ $ git rebase upstream/master
 If you have not set the upstream, do so as follows:
 
 ```sh
-$ git remote add upstream https://github.com/SolaceSamples/solace-samples-template
+$ git remote add upstream https://github.com/solacese/machine-learning-demo
 ```
 
 If you have already pushed your fork, then do not rebase. Instead merge any changes from master that are not already part of your branch.
@@ -82,7 +81,7 @@ git push origin my-fix-branch
 
 #### Step 6: Pull Request
 
-In GitHub, send a pull request to `solace-samples-template:master`.
+In GitHub, send a pull request to `machine-learning-demo:master`.
 
 When fixing an existing issue, use the [commit message keywords](https://help.github.com/articles/closing-issues-via-commit-messages/) to close the associated GitHub issue.
 
@@ -96,15 +95,6 @@ That's it! Thank you for your contribution!
 
 * Open a GitHub [enhancement request issue](https://github.com/solacese/machine-learning-demo/issues/new) and describe the new functionality.
 
-## <a name="addFeature"></a> **Steps to add a new feature**
-
-* Add your feature source file under src/features/newFeature.js  
-* Add your feature markdown file under \_docs/feature\_newFeature.md
-* Update the \_docs/tutorials.yml to include the new feature by appending your feature name to the features list
-
-        features:  
-        - feature-1  
-        - feature_newFeature  
 
 ##  <a name="questions"></a> Do you have questions about the source code?
 
