@@ -143,6 +143,26 @@ message-vpn "restgw-demo-solace-uk"
         exit
       no shutdown
       exit
+    create rest-delivery-point "RDP-CNN-NEWS"
+      client-profile "default"
+      create queue-binding "GET_CNN-NEWS"
+        no post-request-target
+        exit
+      create rest-consumer "CNN-NEWS"
+        authentication auth-scheme "none"
+        no authentication http-basic username
+        local interface "1/1/lag1"
+        remote host "ec2-34-254-162-166.eu-west-1.compute.amazonaws.com"
+        remote max-post-wait-time 30
+        remote outgoing-connection-count 3
+        remote port 8801
+        remote retry delay 3
+        no remote ssl
+        ssl cipher-suite "default"
+        no shutdown
+        exit
+      no shutdown
+      exit	  
     create rest-delivery-point "RDP-GOOGLE-IMAGE"
       client-profile "default"
       create queue-binding "POST_GOOGLE-IMAGE"
@@ -286,6 +306,26 @@ message-spool message-vpn "restgw-demo-solace-uk"
     no shutdown ingress
     no shutdown egress
     exit
+  create queue "GET_CNN-NEWS"
+    access-type "exclusive"
+    max-bind-count 1000
+    max-delivered-unacked-msgs-per-flow 10000
+    max-message-size 10000000
+    max-spool-usage 100
+    max-redelivery 0
+    reject-msg-to-sender-on-discard
+    reject-low-priority-msg-limit 0
+    owner "demo-user-public"
+    dead-message-queue "#DEAD_MSG_QUEUE"
+    permission all consume
+    no respect-message-priority
+    no respect-ttl
+    no max-ttl
+    no reject-low-priority-msg
+    subscription topic "GET/rss/>" 
+    no shutdown ingress
+    no shutdown egress
+    exit	
   create queue "POST_AWS-LAMBDA"
     access-type "exclusive"
     max-bind-count 1000
