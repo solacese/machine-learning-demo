@@ -146,7 +146,7 @@ var BasicRequestor = function (topicName) {
 	
 	// sends request messages to the various services  
     requestor.sendRequest = function (correlationID, requestText, topicName) {	
-			
+		
         if (requestor.session !== null) {
 			
             var request = solace.SolclientFactory.createMessage();
@@ -183,7 +183,6 @@ var BasicRequestor = function (topicName) {
 		var messageCorrelationId = "";
 				
 		try {
-
 			messageCorrelationId = message.getCorrelationId();
 			//var messageStringRaw = message.getBinaryAttachment();
 			
@@ -202,7 +201,20 @@ var BasicRequestor = function (topicName) {
 			
 			var messageStringJson = messageStringRaw.substring(messageStringRaw.indexOf("{"),messageStringRaw.lastIndexOf("}")+1);
 			
-			if (messageStringJson !== "") {
+			// Is it actual valid JSON though?
+			var isValidJson = false;
+
+			// This try-catch purely to test the JSON, then further operations to use the main try-catch.
+			try {
+				JSON.parse(messageStringJson);
+                isValidJson = true;	
+				
+			} catch (e) {
+				isValidJson = false;
+			}			
+			
+			if (isValidJson) 
+			{	
 				//console.log("Response received in JSON for correlation ID: '" + messageCorrelationId + "' : " + messageStringJson);
 				processReceivedResponse(messageCorrelationId, JSON.parse(messageStringJson));
 			}
@@ -215,6 +227,7 @@ var BasicRequestor = function (topicName) {
 		}
 		catch (error)
 		{
+			
 			var errorMsg = { "error" : "An exception occurred in the message receive callback: " + error.message };
 			console.log(errorMsg.error + "[" + messageCorrelationId + "]");
 			processReceivedResponse (messageCorrelationId, errorMsg);

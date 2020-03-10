@@ -3,12 +3,12 @@
   <head>
     <!-- Jamil.Ahmed@Solace.com -->
     <title>Cloud Analytics: Comparing Machine Learning Capabilities</title>
-	<meta property="og:title" content="Machine Learning: Analysing BBC News Articles" />
+	<meta property="og:title" content="Machine Learning: Analysing CNN News Articles" />
 	<meta property="og:description" content="Compare Machine Learning results across AWS, Azure and Google." />
     <meta property="og:url" content="http://london.solace.com/cloud-analytics/machine-learning.html" />
     <meta property="og:image" content="http://london.solace.com/cloud-analytics/prop.png" />
 
-	<META NAME="Description" CONTENT="Compare Machine Learning results across AWS, Azure and Google through BBC News analysis.">
+	<META NAME="Description" CONTENT="Compare Machine Learning results across AWS, Azure and Google through CNN News analysis.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge;" />
     <meta charset="utf-8"/>
 	
@@ -83,7 +83,7 @@
             </a>
           </span>
         <div class="banner-heading">
-          <h1>Comparing Machine Learning through BBC News Analysis</h1>
+          <h1>Comparing Machine Learning through CNN News Analysis</h1>
         </div>
       </div>
 	</div>
@@ -97,16 +97,14 @@
 <div class="doc-width">
 	<div class="row">
 	  <div class="column left-pane">
-			<p><b>1. Select a BBC News article below:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<p><b>1. Select a CNN News article below:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				<select id="feedSelector" onchange="refreshArticles()">
-					<option value="GET/news/rss.xml?edition=uk">Top Stories (UK)</option>
-					<option value="GET/news/rss.xml?edition=us">Top Stories (US)</option>
-					<option value="GET/news/rss.xml?edition=int">Top Stories (World)</option>					
-					<option value="GET/news/world/rss.xml">World News</option>
-					<option value="GET/news/uk/rss.xml">UK News</option>
-					<option value="GET/news/world/us_and_canada/rss.xml">US & Canada News</option>
-					<option value="GET/news/business/rss.xml">Business News</option>
-					<option value="GET/news/entertainment_and_arts/rss.xml">Entertaintment & Arts</option>
+					<option value="GET/rss/edition.rss">Top Stories (International)</option>
+					<option value="GET/rss/edition_us.rss">Top Stories (US)</option>
+					<option value="GET/rss/edition_europe.rss">Top Stories (Europe)</option>					
+					<option value="GET/rss/edition_technology.rss">Technology</option>
+					<option value="GET/rss/edition_entertainment.rss">Entertainment</option>
+					<option value="GET/rss/edition_sport.rss">Sport</option>
 					<option value="curated-examples" selected="selected">* Curated Examples *</option>					
 				</select>
 			</p>
@@ -119,10 +117,10 @@
 		</div>
 		<br>
 			<div id="news-error" class="warning" style="display: none">
-				Oops! Something went wrong parsing the BBC News response. (Maybe the format changed.) You are limited to the cached "Curated Examples" articles for now.
+				Oops! Something went wrong parsing the CNN News response. (Maybe the format changed.) You are limited to the cached "Curated Examples" articles for now.
 			</div>
 			<div id="news-timeout" class="warning" style="display: none">
-				Oops! No response received from the live BBC News feed service. You are limited to the cached "Curated Examples" articles for now.
+				Oops! No response received from the live CNN News feed service. You are limited to the cached "Curated Examples" articles for now.
 			</div>		
 		<p><b>2. Submit News Article for Sentiment and Image Analysis</b></p>
 
@@ -137,7 +135,7 @@
 				</div>
 				<div class="row">
 					<div class="services-column">
-						<h4>Cloud Service Names</h4>
+						<h4>Cloud Service</h4>
 					</div>
 					<div class="sentiment-column">
 						<h4>Sentiment Analysis</h4>
@@ -205,7 +203,7 @@
 		<div class="links-box">
 			<h4>What is Sentiment Analysis?</h4>
 			<p>Sentiment Analysis is a machine learning capability that can determine whether a piece of text is positive, neutral or negative in its content.</p>
-			<p>An example usage would be a marketing department automatically monitoring tweets about their brand and flagging negative tweets for follow-up by their social media team. In financial services, political and business news can move markets, so sentiment analysis of live news may be an input into automated trading engines that respond to world events in real-time. Read more about it <a href="https://en.wikipedia.org/wiki/Sentiment_analysis" title="Sentiment Analysis - Wikipedia" target="_blank"><u>here</u>.</a></p>
+			<p>An example usage would be a marketing department automatically monitoring tweets about their brand and flagging negative tweets for follow-up by their social media team. In financial services, political and business news can move markets, so sentiment analysis of live news may be an input into <u><a href="https://www.reuters.com/article/us-sterling-trading-insight/rage-within-the-machine-brexit-headline-blizzard-overloads-fx-algos-idUSKCN1RG0GN" title="Brexit headline blizzard overloads FX algos" target="_blank">automated trading engines</a></u> that respond to world events in real-time. Read more about it <a href="https://en.wikipedia.org/wiki/Sentiment_analysis" title="Sentiment Analysis - Wikipedia" target="_blank"><u>here</u>.</a></p>
 		</div>		
 		<br>
 		<div class="links-box">
