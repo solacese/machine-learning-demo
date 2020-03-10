@@ -152,7 +152,7 @@ message-vpn "restgw-demo-solace-uk"
         authentication auth-scheme "none"
         no authentication http-basic username
         local interface "1/1/lag1"
-        remote host "ec2-34-254-162-166.eu-west-1.compute.amazonaws.com"
+        remote host "nginx-hostname-here.com"
         remote max-post-wait-time 30
         remote outgoing-connection-count 3
         remote port 8801
