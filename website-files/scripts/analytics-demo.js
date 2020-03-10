@@ -338,7 +338,8 @@ function processCNNNewsResponse (response)
 					
 					descriptionLong = items[i].getElementsByTagName("description")[0].childNodes[0].nodeValue;
 					// Need to strip the image?
-					if (descriptionLong.indexOf("<img src") > 0) 
+
+					if (descriptionLong.includes("<img src")) 
 					{
 						descriptionShort = descriptionLong.substring(0, descriptionLong.indexOf("<img src"));
 					}
