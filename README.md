@@ -1,4 +1,4 @@
-# Demo: Comparing Machine Learning through BBC News Analysis
+# Demo: Comparing Machine Learning through CNN News Analysis
 
 ## What does this demonstrate?
 
@@ -13,8 +13,9 @@ The Machine Learning (ML) Functions of 'Sentiment Analysis' and 'Image Analysis'
 
 ### Real-time Data Sources
 
-The data source for images and text for ML analysis is real-time [BBC News](https://bbc.co.uk/news) as provided via their [RSS feeds](https://www.bbc.co.uk/news/10628494#userss). (Also accessed via the PubSub+ broker as a REST GET operation.)
+The data source for images and text for ML analysis is real-time [CNN News](https://edition.cnn.com/) as provided via their [RSS feeds](https://edition.cnn.com/services/rss/). (Also accessed via the PubSub+ broker as a REST GET operation.)
 
+(Was originally built using [BBC News](https://bbc.co.uk/news) at [RSS feeds](https://www.bbc.co.uk/news/10628494#userss), however changed to CNN when the BBC feeds stopped including images. See Closed Issue #3 for more details.)
   
 ### Solace PubSub+ features used
 - [REST Microgateway](https://docs.solace.com/Features/Microgateway-Concepts/Microgateway-Use-Cases.htm)
