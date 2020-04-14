@@ -27,7 +27,7 @@ var cUXMsgSubmit = "Submit article for analysis";
 var cUXMsgNewsTimedOut = "News service request timed out! Try another selection.";
 
 var dropdownIndexCached = 6	// Position in drop down menu for the cached news selection
-var dropdownIndexGB = 2	// Position in drop down menu for the UK news selection
+var dropdownIndexGB = 0	// Position in drop down menu for the UK news selection. Using International Edition as Europe Edition seems a little neglected.
 var dropdownIndexUS = 1	// Position in drop down menu for the US news selection
 var dropdownIndexCA = 1	// Position in drop down menu for the CA news selection
 var dropdownIndexIntl = 0	// Position in drop down menu for the International news selection
